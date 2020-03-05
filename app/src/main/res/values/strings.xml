@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">SmartList</string>
+    <string name="smartlist">SmartList</string>
+    <string name="aun_sin_cuenta">Aún no estás registrado?</string>
+</resources>

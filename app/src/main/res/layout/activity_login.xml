@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tiendofondo"
+    tools:context=".Login">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/drawable_fodologin"
+        >
+        <TextView
+
+            android:id="@+id/titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/smartlist"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_marginTop="30dp"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="15"
+            android:shadowColor="@color/Azul1"
+            android:fontFamily="serif"
+            android:textColor="@color/Azul4"
+            />
+
+        <LinearLayout
+            android:layout_below="@id/titulo"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:orientation="vertical"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sing in"
+                android:textSize="30sp"
+                android:layout_gravity="center"
+                />
+
+            <EditText
+                android:id="@+id/etUser"
+                android:layout_width="match_parent"
+                android:background="@drawable/drawable_edittext"
+                android:layout_height="50dp"
+                android:hint="Ingrese User"
+                android:textColor="@color/Black"
+                android:textColorHint="@color/Black"
+                android:drawableLeft="@drawable/person"
+                android:layout_marginVertical="20dp"
+                android:padding="10dp"
+                />
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:background="@drawable/drawable_edittext"
+                android:layout_height="50dp"
+                android:drawableLeft="@drawable/lock"
+                android:textColorHint="@color/Black"
+                android:textColor="@color/Black"
+                android:padding="10dp"
+                android:hint="Ingrese Password"
+                />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Olvidaste tu contraseña?"
+                android:textSize="18sp"
+                android:layout_gravity="end"
+                android:textColor="@color/AzulDeLink"
+                />
+
+            <Button
+                android:id="@+id/btnIngresar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:background="@drawable/drawable_iniciarseccion"
+                android:text="Iniciar Sesion"
+                android:layout_marginVertical="20dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/aun_sin_cuenta"
+                    android:textSize="18sp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/Black"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:text="crear cuenta."
+                    android:textSize="18sp"
+                    android:textColor="@color/AzulDeLink"
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                >
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="2dp"
+                    android:layout_weight="4"
+                    android:layout_gravity="center"
+                    android:background="@color/Black"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text=" O "
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="2dp"
+                    android:layout_weight="4"
+                    android:background="@color/Black"
+                    android:layout_gravity="center"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                >
+
+                <ImageView
+                    android:id="@+id/imgFacebook"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/facebook"
+                    />
+
+                <ImageView
+                    android:id="@+id/imgTwitter"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/twitter"
+                    />
+
+                <ImageView
+                    android:id="@+id/imgEmail"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/email"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#234375</color>
+    <color name="colorPrimaryDark">#234375</color>
+    <color name="colorAccent">#234375</color>
+    <color name="Azul1">#E1BFDAF1</color>
+    <color name="Azul2">#E183A7CB</color>
+    <color name="Azul3">#3A6AA5</color>
+    <color name="Azul4">#234375</color>
+    <color name="orange">#F1B563</color>
+    <color name="Amarillo">#F8DB4F</color>
+    <color name="AmarilloPalido">#EDF6C8</color>
+    <color name="WhiteTransparencia">#88FFFFFF</color>
+    <color name="White">#FFFFFF</color>
+    <color name="Black">#99000000</color>
+    <color name="AzulDeLink">#2196F3</color>
+</resources>
