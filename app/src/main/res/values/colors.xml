@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#234375</color>
-    <color name="colorPrimaryDark">#234375</color>
-    <color name="colorAccent">#234375</color>
+    <color name="colorPrimary">#2196F3</color>
+    <color name="colorPrimaryDark">#2196F3</color>
+    <color name="colorAccent">#2196F3</color>
     <color name="Azul1">#E1BFDAF1</color>
     <color name="Azul2">#E183A7CB</color>
     <color name="Azul3">#3A6AA5</color>
@@ -14,4 +14,5 @@
     <color name="White">#FFFFFF</color>
     <color name="Black">#99000000</color>
     <color name="AzulDeLink">#2196F3</color>
+    <color name="Transparente">#00FFFFFF</color>
 </resources>

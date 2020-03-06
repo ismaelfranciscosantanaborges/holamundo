@@ -2,4 +2,7 @@
     <string name="app_name">SmartList</string>
     <string name="smartlist">SmartList</string>
     <string name="aun_sin_cuenta">Aún no estás registrado?</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
