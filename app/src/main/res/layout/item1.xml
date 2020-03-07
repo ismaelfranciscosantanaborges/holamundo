@@ -3,23 +3,23 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@drawable/drawable_item1"
     android:padding="5dp"
     >
+<!--android:background="@drawable/drawable_item1" -->
 
     <CheckBox
         android:id="@+id/checkbox"
         android:layout_width="0dp"
         android:layout_height="50dp"
-        android:button="@drawable/checkbox_size"
-        android:layout_gravity="center"
         android:layout_weight="1"
+        android:layout_gravity="end"
+        android:button="@drawable/checkbox_size"
 
         />
 
     <TextView
         android:id="@+id/tvNombre"
-        android:layout_width="290dp"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:text="Arroz primiun la garza"
         android:textStyle="bold"
@@ -33,10 +33,11 @@
         android:id="@+id/tvCantidad"
         android:layout_width="30dp"
         android:layout_gravity="center"
-        android:layout_height="50dp"
+        android:layout_height="40dp"
         android:gravity="center"
         android:text="5"
-        android:background="@color/Azul2"
+        android:textColor="@color/White"
+        android:background="@color/AzulDeLink"
         android:layout_weight="1"
         android:textSize="30sp"
         />
