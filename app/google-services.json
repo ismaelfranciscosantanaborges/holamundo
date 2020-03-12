@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1018245665410",
+    "firebase_url": "https://smartlist-f5b36.firebaseio.com",
+    "project_id": "smartlist-f5b36",
+    "storage_bucket": "smartlist-f5b36.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1018245665410:android:84b5a41650f44b744d5a9b",
+        "android_client_info": {
+          "package_name": "com.example.smartlist"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1018245665410-1huu75054s1kf5uga4kehk3o8buf3rhk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.smartlist",
+            "certificate_hash": "a3c7dab637851f47591e9c3bdd061359d491f49c"
+          }
+        },
+        {
+          "client_id": "1018245665410-jn3b0gjs6n8fj6i3nnhbovhp2nmp4d7a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC699wxdbVkvERbJ3w6zHDA3g1LCp49f94"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1018245665410-jn3b0gjs6n8fj6i3nnhbovhp2nmp4d7a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

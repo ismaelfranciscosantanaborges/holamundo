@@ -15,11 +15,11 @@ public class OrderPageAdapter extends FragmentStateAdapter {
     public Fragment createFragment(int position) {
         switch (position){
             case 1:
-                return new ListaDeCompra();
-            case 2:
                 return new Scanner_ListaDelTotal();
-            default:
+            case 2:
                 return new HistorialFragment();
+            default:
+                return new ListaDeCompra();
         }
     }
 
