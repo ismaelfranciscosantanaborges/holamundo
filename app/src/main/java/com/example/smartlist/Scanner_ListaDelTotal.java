@@ -14,10 +14,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.CheckBox;
+import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
 import com.journeyapps.barcodescanner.CaptureActivity;
@@ -30,14 +34,19 @@ import java.util.ArrayList;
  */
 public class Scanner_ListaDelTotal extends Fragment {
 
+
+
     private View rootView;
-    private ArrayList<Lista1> listaItem;
+    private ArrayList<Producto> listaItem;
     private FloatingActionButton floatingActionButton;
-    private Adatador adaptador;
+    private Adaptador adaptador;
     private ListView listView;
     private CheckBox chkAll;
     private int cantidadTotal;
     private Context context;
+    private String codigoLeido;
+    private ImageView btnImgDescrementar,btnImgIncrementar;
+    private TextView tvCantidadProducto, tvTotalProducto;
 
     public Scanner_ListaDelTotal() {
         // Required empty public constructor
@@ -50,8 +59,11 @@ public class Scanner_ListaDelTotal extends Fragment {
         // Inflate the layout for this fragment
         rootView = inflater.inflate(R.layout.fragment_scanner__lista_del_total, container, true);
 
+
+
         listView = rootView.findViewById(R.id.listView1);
         floatingActionButton = rootView.findViewById(R.id.floatingActionButton);
+
 
         floatingActionButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -62,11 +74,15 @@ public class Scanner_ListaDelTotal extends Fragment {
                 //UtilizandoButtonSheet bottonSheet = new UtilizandoButtonSheet();
                 //bottonSheet.show(getFragmentManager(), "exampleBottonSheet");
 
+                openDialog();
+
 
             }
         });
 
-        adaptador = new Adatador(getContext(), getArrayList(), cantidadTotal);
+        adaptador = new Adaptador(getContext(), getArrayList());
+
+        adaptador.notifyDataSetChanged();
 
         listView.setAdapter(adaptador);
 
@@ -74,31 +90,28 @@ public class Scanner_ListaDelTotal extends Fragment {
         return rootView;
     }
 
-    private ArrayList<Lista1> getArrayList(){
+    private void openDialog(){
+        AgregarDialog agregarDialog = new AgregarDialog();
+        agregarDialog.show(getFragmentManager(), "Agregar Producto");
+    }
 
-        listaItem = new ArrayList<Lista1>();
+    private ArrayList<Producto> getArrayList(){
 
-        listaItem.add(new Lista1("Pan de agua", 10, false));
-        listaItem.add(new Lista1("Arina de maiz", 10, false));
-        listaItem.add(new Lista1("Arroz primiun", 1, false));
-        listaItem.add(new Lista1("Refresco de lo grande", 4, false));
-        listaItem.add(new Lista1("Pan de agua", 6, false));
-        listaItem.add(new Lista1("Pan de agua", 9, false));
-        listaItem.add(new Lista1("Pan de agua", 10, false));
-        listaItem.add(new Lista1("Pan de agua", 10, false));
-        listaItem.add(new Lista1("Pan de agua", 10, false));
-        listaItem.add(new Lista1("Pan de agua", 10, false));
-        listaItem.add(new Lista1("Pan de agua", 10, false));
-        listaItem.add(new Lista1("Pan de agua", 10, false));
-        listaItem.add(new Lista1("Pan de agua", 10, false));
-        listaItem.add(new Lista1("Pan de agua", 10, false));
-        listaItem.add(new Lista1("Pan de agua", 10, false));
-        listaItem.add(new Lista1("Pan de agua", 10, false));
-        listaItem.add(new Lista1("Pan de agua", 10, false));
-        listaItem.add(new Lista1("Pan de agua", 10, false));
-        listaItem.add(new Lista1("Pan de agua", 10, false));
-        listaItem.add(new Lista1("Pan de agua", 10, false));
-        listaItem.add(new Lista1("Pan de agua", 10, false));
+        listaItem = new ArrayList<Producto>();
+
+        listaItem.add(new Producto("13", "Pan de agua", 10.3));
+        listaItem.add(new Producto("43","Arina de maiz", 10));
+        listaItem.add(new Producto("13", "Arroz primiun", 100.3));
+        listaItem.add(new Producto("43","Refresco de lo grande", 10));
+        listaItem.add(new Producto("13", "Pan de agua", 104));
+        listaItem.add(new Producto("43","Arina de maiz", 1000));
+        listaItem.add(new Producto("13", "Arroz primiun", 3000));
+        listaItem.add(new Producto("43","Refresco de lo grande", 75));
+        listaItem.add(new Producto("13", "Pan de agua", 230));
+        listaItem.add(new Producto("43","Arina de maiz", 550));
+        listaItem.add(new Producto("13", "Arroz primiun", 492));
+        listaItem.add(new Producto("43","Refresco de lo grande", 90));
+
 
         cantidadTotal = listaItem.size();
         return listaItem;
@@ -125,6 +138,7 @@ public class Scanner_ListaDelTotal extends Fragment {
         if(result != null){
             if(result.getContents() != null){
                 Toast.makeText(getContext(), "EL CODIGO DE BARRA ES: " + result.getContents().toString(), Toast.LENGTH_LONG).show();
+                codigoLeido = result.getContents();
                 Log.d("ERRORRRRRRR", result.getContents());
             }else{
                 Toast.makeText(getContext(), "HAS CANCELADO EL SCANER", Toast.LENGTH_LONG).show();

@@ -50,7 +50,6 @@ public class ListaDeCompra extends Fragment {
         // Inflate the layout for this fragment
         rootView = inflater.inflate(R.layout.fragment_lista_de_compra, container, true);
 
-        rootView = inflater.inflate(R.layout.fragment_scanner__lista_del_total, container, true);
 
         listView = rootView.findViewById(R.id.listView1);
         floatingActionButton = rootView.findViewById(R.id.floatingActionButton);

@@ -3,6 +3,8 @@
     <color name="colorPrimary">#2196F3</color>
     <color name="colorPrimaryDark">#2196F3</color>
     <color name="colorAccent">#2196F3</color>
+    <color name="Green">#4CAF50</color>
+    <color name="Red">#FF0000</color>
     <color name="Azul1">#E1BFDAF1</color>
     <color name="Azul2">#E183A7CB</color>
     <color name="Azul3">#3A6AA5</color>

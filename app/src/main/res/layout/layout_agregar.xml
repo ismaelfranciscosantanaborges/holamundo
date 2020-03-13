@@ -5,13 +5,23 @@
     android:padding="30dp"
     android:layout_height="match_parent">
 
-
-
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/etAgregarPrecioP"
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="nombre de producto"
+        android:text="Codigo Scaniado"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:id="@+id/tvIdP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1424367864737"
+        android:textAlignment="center"
+        android:textSize="17sp"
+        android:layout_marginBottom="10dp"
         />
 
     <com.google.android.material.textfield.TextInputEditText
@@ -19,6 +29,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="nombre de producto"
+        />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/etAgregarPrecioP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese el precio"
+        android:inputType="numberDecimal"
         />
 
     <Button
