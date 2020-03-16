@@ -11,7 +11,7 @@ import com.google.android.material.badge.BadgeDrawable;
 import com.google.android.material.tabs.TabLayout;
 import com.google.android.material.tabs.TabLayoutMediator;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements IEvaluable {
 
     private ViewPager2 viewPager2;
     private TabLayout tabLayout;

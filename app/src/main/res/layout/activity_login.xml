@@ -71,6 +71,7 @@
                 android:textColorHint="@color/Black"
                 android:textColor="@color/Black"
                 android:padding="10dp"
+                android:inputType="textPassword"
                 android:hint="Ingrese Password"
                 />
 

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvNombreP2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Arroz primiun la  garza"
+            android:textStyle="bold"
+            android:layout_marginTop="2dp"
+            android:layout_gravity="center"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-light"
+            android:textAlignment="center"
+            />
+
+        <TextView
+            android:id="@+id/tvIdP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="53493482331"
+            android:textStyle="bold"
+            android:layout_marginTop="2dp"
+            android:layout_gravity="center"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-light"
+            android:textAlignment="center"
+            />
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_weight="1"
+        />
+
+
+    <TextView
+        android:id="@+id/tvPrecioP"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:src="@drawable/product"
+        android:text="40444"
+        android:textSize="18sp"
+        android:textColor="@color/White"
+        android:layout_gravity="center"
+        android:layout_marginRight="3dp"
+        android:layout_marginLeft="5dp"
+        android:background="@color/Green"
+        android:gravity="center"
+        android:padding="5dp"
+        />
+
+</LinearLayout>
