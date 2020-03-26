@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+
+    <ImageView
+        android:id="@+id/imgDismiss"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/icon_close"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="end"
+        android:layout_marginHorizontal="10dp"
+        />
+
+    <ImageView
+        android:id="@+id/imgPC"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/imagen_producto"
+        android:layout_marginTop="5dp"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NOMBRE DEL PRODUCTO"
+        android:textStyle="bold"
+        android:textSize="12sp"
+        android:textAlignment="center"
+        />
+    <TextView
+        android:id="@+id/tvNombrePC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NOMBRE DEL PRODUCTO"
+        android:textSize="14sp"
+        android:textAlignment="center"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PRECIO DEL PRODUCTO"
+        android:textStyle="bold"
+        android:textSize="12sp"
+        android:textAlignment="center"
+        />
+    <TextView
+        android:id="@+id/tvPrecioPC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="200"
+        android:textSize="14sp"
+        android:textAlignment="center"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CANTIDAD DECEADA"
+        android:textStyle="bold"
+        android:textSize="12sp"
+        android:textAlignment="center"
+        />
+    <EditText
+        android:id="@+id/etCantidadPC"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:text="1"
+        android:inputType="number"
+        android:maxLength="2"
+        android:textAlignment="center"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TOTAL DE PRODUCTO"
+        android:textStyle="bold"
+        android:textSize="12sp"
+        android:textAlignment="center"
+        />
+    <TextView
+        android:id="@+id/tvTotalPC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="3"
+
+        android:textSize="16sp"
+        android:textAlignment="center"
+        />
+
+    <Button
+        android:id="@+id/btnAgregarPC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Agregar a la compra"
+        />
+    <Button
+        android:id="@+id/btnCancelarPC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cancelar PRODUCTO"
+        />
+</LinearLayout>

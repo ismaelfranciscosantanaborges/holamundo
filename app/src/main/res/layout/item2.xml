@@ -1,93 +1,131 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="45dp"
+    android:layout_height="80dp"
     android:padding="5dp">
 
-
-    <TextView
-        android:id="@+id/tvNombreP2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Arroz primiun la  garza"
-        android:textStyle="bold"
-        android:layout_marginTop="2dp"
-        android:layout_gravity="center"
-        android:textSize="16sp"
-        android:fontFamily="sans-serif-light"
-        android:textAlignment="center"
-        />
-
-    <View
-        android:layout_width="wrap_content"
-        android:layout_height="1dp"
-        android:layout_weight="1"
-        />
-
-   <!-- <TextView
-        android:id="@+id/btnIngrementar"
-        android:layout_width="25dp"
-        android:layout_height="25dp"
-        android:background="@drawable/circle_cantidad"
-        android:textStyle="bold"
-        android:textSize="20dp"
-        android:layout_gravity="top"
-        android:gravity="center"
-        android:text="+"
-        />
-
-        -->
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="35dp"
-        android:background="@drawable/circle_cantidad"
-        >
+        android:id="@+id/linearInfo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/linearprecio"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:id="@+id/btnImgIncrementar"
-            android:layout_width="wrap_content"
+            android:id="@+id/index"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@drawable/imagen_producto" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:src="@drawable/incrementar2"
-            android:tint="@color/Green"
+            android:layout_marginLeft="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvNombreP2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="Arroz primiun la garza"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:src="@drawable/product"
+                    android:text="Precio por unidad: "
+                    android:textColor="@color/Black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/productoUnidad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:src="@drawable/product"
+                    android:text="999999"
+                    android:textColor="@color/Black"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:src="@drawable/product"
+                    android:text="Cantidad Pedida: "
+                    android:textColor="@color/Black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/cantidadDeProducto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:src="@drawable/product"
+                    android:text="99"
+                    android:textColor="@color/Black"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearprecio"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/icon_money"
             android:layout_gravity="center"
             />
 
         <TextView
-            android:id="@+id/tvCantidadProducto"
-            android:layout_width="30dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:text="34"
-            android:textColor="@color/Black"
-            android:textSize="20sp" />
-
-        <ImageView
-            android:id="@+id/btnImgDescrementar"
+            android:id="@+id/totalProducto"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/descrementar2"
-            android:tint="@color/Red"
             android:layout_gravity="center"
-            />
+            android:text="999,999"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
     </LinearLayout>
 
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <TextView
-        android:id="@+id/totalProducto"
-        android:layout_width="60dp"
-        android:layout_height="40dp"
-        android:src="@drawable/product"
-        android:text="40444"
-        android:textSize="18sp"
-        android:textColor="@color/White"
-        android:layout_gravity="center"
-        android:layout_marginRight="3dp"
-        android:layout_marginLeft="5dp"
-        android:background="@color/Green"
-        android:gravity="center"
-        android:padding="5dp"
-        />
-
-</LinearLayout>

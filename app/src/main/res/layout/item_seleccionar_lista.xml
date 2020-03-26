@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:paddingHorizontal="5dp"
+    >
+
+    <TextView
+        android:id="@+id/nombreLista"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:text="SMARLIST"
+        android:textSize="18sp"
+        />
+    <View
+        android:layout_width="1dp"
+        android:layout_height="60dp"
+        />
+
+    <TextView
+        android:id="@+id/fecha"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:background="@color/Azul3"
+        android:textColor="@color/White"
+        android:text="30-Dic-2019"
+        android:textAlignment="center"
+        />
+
+</LinearLayout>

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:layout_width="match_parent"
+    android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <ImageView
@@ -17,37 +16,14 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Codigo Scaneado"
+        android:text="Agregar a la Lista"
         android:textStyle="bold"
         android:textAlignment="center"
-        android:textSize="20sp"
-        />
-
-    <TextView
-        android:id="@+id/tvIdP"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/ningun_codigo_escaneado"
-        android:textAlignment="center"
-        android:textSize="17sp"
-
+        android:textSize="25sp"
         android:layout_marginBottom="10dp"
         />
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Marca del producto"
-        >
 
-        <EditText
-            android:id="@+id/etAgregarMarcaP"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPersonName"
-            />
-    </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
@@ -56,7 +32,7 @@
         >
 
         <EditText
-            android:id="@+id/etAgregarNombreP"
+            android:id="@+id/etNombre"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -67,11 +43,11 @@
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Ingrese el precio"
+        android:hint="Cantidad a comprar"
         >
 
         <EditText
-            android:id="@+id/etAgregarPrecioP"
+            android:id="@+id/etCantidad"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -79,33 +55,20 @@
             />
     </com.google.android.material.textfield.TextInputLayout>
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Descripcion del producto"
-        >
-
-        <EditText
-            android:id="@+id/etAgregarDescripcionP"
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:ems="10"
-            android:inputType="textMultiLine"
-            />
-    </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:id="@+id/btnAgregarP"
+        android:id="@+id/btnAgregar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Agregar"
         />
 
     <Button
-        android:id="@+id/btnCancelarP"
+        android:id="@+id/btnCancelar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Cancelar"
         />
+
 
 </LinearLayout>
