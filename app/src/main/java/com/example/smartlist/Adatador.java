@@ -69,7 +69,12 @@ public class Adatador extends BaseAdapter {
             }
         });
 
-        holder.chkItem.setChecked(itemSelection[position]);
+        try{
+            holder.chkItem.setChecked(itemSelection[position]);
+        }catch (Exception e){
+            holder.chkItem.setChecked(itemSelection[position]);
+        }
+
         convertView.setTag(holder);
         //holder.chkItem.setText(getItem(position));
 
@@ -81,7 +86,7 @@ public class Adatador extends BaseAdapter {
 
 
         tvNombre.setText(lista1.nombre);
-        tvCantidad.setText(lista1.cantidad + "");
+        tvCantidad.setText(lista1.getCantidad() + "");
 
 
         return convertView;

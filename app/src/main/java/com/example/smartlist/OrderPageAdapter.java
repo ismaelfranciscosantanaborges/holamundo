@@ -6,6 +6,7 @@ import androidx.fragment.app.FragmentActivity;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
 
 public class OrderPageAdapter extends FragmentStateAdapter {
+
     public OrderPageAdapter(@NonNull FragmentActivity fragmentActivity) {
         super(fragmentActivity);
     }
