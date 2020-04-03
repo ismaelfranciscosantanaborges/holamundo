@@ -20,6 +20,7 @@ public class DatabaseHelperCompra extends SQLiteOpenHelper {
     }
     //Aqui esta el patron Sigleton
     public static DatabaseHelperCompra obtenerConexion(Context context){
+
         if(databaseHelper == null){
             databaseHelper = new DatabaseHelperCompra( context );
             return databaseHelper;

@@ -116,7 +116,6 @@ public class AgregarDialog extends AppCompatDialogFragment {
             public void onClick(View v) {
                 if(btnCancelarP.getText().toString().equalsIgnoreCase("ELIMINAR")){
                     myRef.child("Productos").child(producto.getId()).removeValue();
-                    listener.obtenerProductoEliminado(producto);
                     dismiss();
                 }else{
                     dismiss();
@@ -135,6 +134,7 @@ public class AgregarDialog extends AppCompatDialogFragment {
 
             }else{
                 dismiss();
+                agregarProducto();
                 Toast.makeText(getContext(), "SE HA MODIFICADO CORRECTAMENTE", Toast.LENGTH_SHORT).show();
             }
 

@@ -18,6 +18,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     private DatabaseHelper(Context context){
         super(context, DATABASE_NAME, null, 1);
     }
+
     //Aqui esta el patron Sigleton
     public static DatabaseHelper obtenerConexion(Context context){
         if(databaseHelper == null){

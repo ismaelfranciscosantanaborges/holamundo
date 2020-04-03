@@ -44,7 +44,7 @@ public class AdapterAdmin extends BaseAdapter {
         TextView id = convertView.findViewById(R.id.tvIdP);
         TextView precio = convertView.findViewById(R.id.tvPrecioP);
 
-        nombre.setText(p.getNombre());
+        nombre.setText(p.getMarca());
         id.setText(p.getId());
         precio.setText(p.getPrecio() + "");
 

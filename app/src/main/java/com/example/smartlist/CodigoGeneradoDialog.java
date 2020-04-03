@@ -41,7 +41,6 @@ public class CodigoGeneradoDialog extends AppCompatDialogFragment {
 
         codigoGenerado = view.findViewById(R.id.codigoGenerado);
 
-
         generarQRcode();
 
         builder.setView(view).setTitle("ESTE ES EL JSON");

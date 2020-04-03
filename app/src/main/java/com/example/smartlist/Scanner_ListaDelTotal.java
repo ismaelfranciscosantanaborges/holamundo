@@ -86,6 +86,7 @@ public class Scanner_ListaDelTotal extends Fragment {
         tvTotalDeCompra = rootView.findViewById(R.id.tvTotalDeCompra);
 
         inicializacionFireBase();
+        //Patron de Diseño Singleton
         databaseHelperCompra = DatabaseHelperCompra.obtenerConexion(getContext());
 
         btnAgregarCL.setOnClickListener(new View.OnClickListener() {
@@ -133,7 +134,7 @@ public class Scanner_ListaDelTotal extends Fragment {
         btnTerminar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                //AQUIII
                 ArrayList<ProductosComprados> lista = databaseHelperCompra.getAllEntidad();
                 String recorer = "";
                 for(int i = 0; i < lista.size(); i++){
@@ -204,41 +205,6 @@ public class Scanner_ListaDelTotal extends Fragment {
 
 
     private Producto codigoExiste(){
-
-       /* myRef.child("Productos").addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                for(final DataSnapshot snapshott: dataSnapshot.getChildren()){
-
-                    myRef.child("Productos").child(snapshott.getKey()).addValueEventListener(new ValueEventListener() {
-                        @Override
-                        public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                            producto = snapshott.getValue(Producto.class);
-                            // Toast.makeText(getContext(), "hahahahahaahahha", Toast.LENGTH_SHORT).show();
-
-                            if(tvCodigoLeido.getText().toString() == producto.getId()){
-                                idExiste = true;
-                                Toast.makeText(getContext(), "Ya este producto ha sido creado", Toast.LENGTH_SHORT).show();
-                            }
-
-                        }
-
-                        @Override
-                        public void onCancelled(@NonNull DatabaseError databaseError) {
-
-                        }
-                    });
-
-                }
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError databaseError) {
-
-            }
-        });
-
-        */
 
        myRef.child("Productos").addValueEventListener(new ValueEventListener() {
            @Override
@@ -356,6 +322,7 @@ public class Scanner_ListaDelTotal extends Fragment {
     private ProductosComprados prod;
     private Producto producto;
     private boolean yaExiste = false;
+
     class Task11 extends AsyncTask<Void,Void,Void> {
 
         @Override
