@@ -42,14 +42,17 @@ public class MainActivity extends AppCompatActivity implements IEvaluable {
                         tab.setText("Lista");
                         tab.setIcon(R.drawable.list);
 
-                        BadgeDrawable badgeDrawable = tab.getOrCreateBadge();
+                       /* BadgeDrawable badgeDrawable = tab.getOrCreateBadge();
 
                         badgeDrawable.setBackgroundColor(
                                 ContextCompat.getColor(getApplicationContext(), R.color.orange)
                         );
                         badgeDrawable.setNumber(3);
                         badgeDrawable.setVisible(true);
+                        */
                         break;
+
+
                     }
                     case 1: {
                         tab.setText("Lista QR");
@@ -57,8 +60,8 @@ public class MainActivity extends AppCompatActivity implements IEvaluable {
                         break;
                     }
                         default: {
-                            tab.setText("Historial");
-                            tab.setIcon(R.drawable.list);
+                            tab.setText("Config");
+                            tab.setIcon(R.drawable.setting);
                             break;
                         }
                 }

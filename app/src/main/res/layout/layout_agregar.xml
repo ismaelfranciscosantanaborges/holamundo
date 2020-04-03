@@ -2,7 +2,9 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/forma_dialog"
+    >
 
     <ImageView
         android:id="@+id/imgDismiss"
@@ -19,6 +21,7 @@
         android:layout_height="wrap_content"
         android:text="Codigo Scaneado"
         android:textStyle="bold"
+        android:textColor="@color/WagnerOscuro"
         android:textAlignment="center"
         android:textSize="20sp"
         />
@@ -28,6 +31,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/ningun_codigo_escaneado"
+        android:textColor="@color/Red"
         android:textAlignment="center"
         android:textSize="17sp"
 
@@ -44,6 +48,7 @@
             android:id="@+id/etAgregarMarcaP"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
             android:ems="10"
             android:inputType="textPersonName"
             />
@@ -59,6 +64,7 @@
             android:id="@+id/etAgregarNombreP"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
             android:ems="10"
             android:inputType="textPersonName"
             />
@@ -73,6 +79,7 @@
         <EditText
             android:id="@+id/etAgregarPrecioP"
             android:layout_width="match_parent"
+            android:layout_marginHorizontal="10dp"
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="numberDecimal"
@@ -89,6 +96,7 @@
             android:id="@+id/etAgregarDescripcionP"
             android:layout_width="match_parent"
             android:layout_height="100dp"
+            android:layout_marginHorizontal="10dp"
             android:ems="10"
             android:inputType="textMultiLine"
             />
@@ -97,15 +105,23 @@
     <Button
         android:id="@+id/btnAgregarP"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:text="Agregar"
+        android:textColor="@color/White"
+        android:background="@drawable/degradado_verde"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="10dp"
         />
 
     <Button
         android:id="@+id/btnCancelarP"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:text="Cancelar"
+        android:background="@drawable/linea_oscura"
+        android:textColor="@color/White"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginBottom="13dp"
         />
 
 </LinearLayout>

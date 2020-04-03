@@ -110,8 +110,9 @@ public class Scanner_ListaDelTotal extends Fragment {
             public void afterTextChanged(Editable s) {
                 String nombre = etBuscar.getText().toString();
                 ArrayList<ProductosComprados> listaBusqueda = new ArrayList<>();
-                if(nombre.length() >= 0){
 
+                if(nombre.length() >= 0){
+                    listaBusqueda.clear();
                     for(ProductosComprados p : listaItem){
                         String nombreP = p.getNombre().toLowerCase();
                         if(nombreP.contains(nombre.toLowerCase())){
@@ -122,7 +123,8 @@ public class Scanner_ListaDelTotal extends Fragment {
                     adaptador = new Adaptador(getContext(),listaBusqueda);
                     listView.setAdapter(adaptador);
                 }else{
-                    adaptador = new Adaptador(getContext(),getArrayList());
+                    listaItem = databaseHelperCompra.getAllEntidad();
+                    adaptador = new Adaptador(getContext(),listaItem);
                     listView.setAdapter(adaptador);
                 }
             }
@@ -266,6 +268,8 @@ public class Scanner_ListaDelTotal extends Fragment {
     }
 
     private void openDialog(ProductosComprados p, boolean existe){
+
+        etBuscar.setText("");
         ComprarDialog comprarDialog = new ComprarDialog();
         comprarDialog.setMessage(getContext(), listView, getArrayList(), todosLosNombres, p, tvTotalDeCompra, existe);
 

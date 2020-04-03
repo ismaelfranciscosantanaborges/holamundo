@@ -27,7 +27,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            >
 
             <TextView
                 android:id="@+id/tvNombreP2"
@@ -36,6 +37,7 @@
                 android:layout_marginTop="2dp"
                 android:fontFamily="sans-serif-medium"
                 android:text="Arroz primiun la garza"
+                android:textColor="@color/WagnerOscuro"
                 android:textAlignment="center"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -51,7 +53,7 @@
                     android:gravity="center"
                     android:src="@drawable/product"
                     android:text="Precio por unidad: "
-                    android:textColor="@color/Black"
+                    android:textColor="@color/WagnerOscuro"
                     android:textSize="14sp" />
 
                 <TextView
@@ -62,7 +64,7 @@
                     android:gravity="center"
                     android:src="@drawable/product"
                     android:text="999999"
-                    android:textColor="@color/Black"
+                    android:textColor="@color/WagnerOscuro"
                     android:textSize="14sp" />
 
             </LinearLayout>
@@ -79,7 +81,7 @@
                     android:gravity="center"
                     android:src="@drawable/product"
                     android:text="Cantidad Pedida: "
-                    android:textColor="@color/Black"
+                    android:textColor="@color/WagnerOscuro"
                     android:textSize="14sp" />
 
                 <TextView
@@ -90,7 +92,7 @@
                     android:gravity="center"
                     android:src="@drawable/product"
                     android:text="99"
-                    android:textColor="@color/Black"
+                    android:textColor="@color/WagnerOscuro"
                     android:textSize="14sp" />
 
             </LinearLayout>
@@ -114,6 +116,7 @@
             android:layout_height="30dp"
             android:src="@drawable/icon_money"
             android:layout_gravity="center"
+            android:tint="@color/WagnerVerde"
             />
 
         <TextView
@@ -121,6 +124,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:textColor="@color/Red"
             android:text="999,999"
             android:textSize="18sp"
             android:textStyle="bold" />

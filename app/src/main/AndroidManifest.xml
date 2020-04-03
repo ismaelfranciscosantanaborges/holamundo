@@ -12,7 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         ><!-- AppTheme  Theme.AppCompat-->
+
         <activity android:name=".AdministradorActivity"></activity>
+
         <activity android:name=".Login">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

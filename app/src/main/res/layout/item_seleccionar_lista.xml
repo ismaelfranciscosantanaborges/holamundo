@@ -13,6 +13,8 @@
         android:layout_height="wrap_content"
         android:layout_weight="2"
         android:text="SMARLIST"
+        android:textStyle="bold"
+        android:textColor="@color/WagnerOscuro"
         android:textSize="18sp"
         />
     <View
@@ -24,9 +26,11 @@
         android:id="@+id/fecha"
         android:layout_width="120dp"
         android:layout_height="wrap_content"
-        android:background="@color/Azul3"
+        android:background="@color/WagnerVerde"
+        android:paddingVertical="5dp"
         android:textColor="@color/White"
         android:text="30-Dic-2019"
+        android:textStyle="bold"
         android:textAlignment="center"
         />
 

@@ -15,6 +15,8 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.recyclerview.widget.SnapHelper;
 
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -23,6 +25,7 @@ import android.widget.Adapter;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
@@ -52,7 +55,8 @@ public class ListaDeCompra extends Fragment implements
     private RecyclerView.LayoutManager layoutManager;
     private RecyclerView recyclerView;
     private EditText etBuscarProducto;
-    private Button btnTerminar, btnHistorial, btnAgregar, btnCrearNuevo;
+    private Button btnTerminar, btnHistorial, btnAgregar ;
+    private ImageView btnCrearNuevo;
     private CheckBox chkAll;
     private int cantidadTotal;
     private Context context;
@@ -176,6 +180,41 @@ public class ListaDeCompra extends Fragment implements
                 paraModificar = true;
                 openDialog();
                 paraModificar = false;
+            }
+        });
+
+        etBuscarProducto.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                String nombre = etBuscarProducto.getText().toString();
+                ArrayList<Lista1> listaBusqueda = new ArrayList<>();
+                if(nombre.length() >= 0){
+                    listaBusqueda.clear();
+
+                    for(Lista1 p : listaItem){
+                        String nombreP = p.getNombre().toLowerCase();
+                        if(nombreP.contains(nombre.toLowerCase())){
+                            listaBusqueda.add(p);
+                        }
+                    }
+
+
+                    adaptador = new RViewAdapter(getContext(),listaBusqueda);
+                    recyclerView.setAdapter(adaptador);
+                }else{
+                    adaptador = new RViewAdapter(getContext(),listaItem);
+                    recyclerView.setAdapter(adaptador);
+                }
             }
         });
     }

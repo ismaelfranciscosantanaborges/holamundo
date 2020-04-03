@@ -15,10 +15,11 @@
         app:layout_constraintTop_toTopOf="parent"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="25sp"
+        android:textSize="23sp"
+        android:gravity="center"
         android:text="Lista de Compra"
         android:textStyle="bold"
-        android:layout_margin="10dp"
+        android:textColor="@color/WagnerOscuro"
         />
 
     <LinearLayout
@@ -33,12 +34,20 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAlignment="center"
-            android:text="Ingrese un producto a buscar" />
+            android:text="Ingrese un producto a buscar"
+            android:textColor="@color/WagnerOscuro"
+            android:textStyle="bold"
+            />
 
         <EditText
             android:id="@+id/etBuscarPC"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="40dp"
+            android:background="@drawable/edittext_busqueda"
+            android:layout_marginHorizontal="10dp"
+            android:paddingHorizontal="10dp"
+            android:layout_marginBottom="5dp"
+            />
 
     </LinearLayout>
 
@@ -69,14 +78,19 @@
             android:orientation="horizontal"
             android:paddingHorizontal="10dp"
             android:gravity="center"
+            android:layout_marginBottom="3dp"
             >
 
             <Button
                 android:id="@+id/btnTerminar"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="40dp"
                 android:text="Terminar"
-                android:textSize="18dp"/>
+                android:textSize="18dp"
+                android:background="@drawable/drawable_redondo"
+                android:paddingHorizontal="10dp"
+                android:textColor="@color/White"
+                />
 
             <View
                 android:layout_width="0dp"
@@ -90,6 +104,7 @@
                 android:text="Total"
                 android:textStyle="bold"
                 android:textSize="30dp"
+                android:textColor="@color/WagnerOscuro"
                 />
 
             <ImageView
@@ -104,6 +119,7 @@
                 android:layout_height="wrap_content"
                 android:text="9999999"
                 android:textSize="28sp"
+                android:textColor="@color/Red"
                 />
 
         </LinearLayout>
@@ -111,10 +127,14 @@
         <Button
             android:id="@+id/btnAgregarCL"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="40dp"
             android:text="Agregar a la compra"
             android:layout_marginHorizontal="10dp"
-            android:textSize="18dp"/>
+            android:textSize="18dp"
+            android:textColor="@color/White"
+            android:background="@drawable/degradado_verde"
+            android:layout_marginBottom="3dp"
+            />
     </LinearLayout>
 
 

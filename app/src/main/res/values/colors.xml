@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#2196F3</color>
-    <color name="colorPrimaryDark">#2196F3</color>
+    <color name="colorPrimary">#54DD90</color>
+    <color name="colorPrimaryDark">#54DD90</color>
     <color name="colorAccent">#2196F3</color>
     <color name="Green">#4CAF50</color>
     <color name="Red">#FF0000</color>
@@ -17,4 +17,12 @@
     <color name="Black">#99000000</color>
     <color name="AzulDeLink">#2196F3</color>
     <color name="Transparente">#00FFFFFF</color>
+    <color name="WagnerVerde">#54DD90</color>
+    <color name="WagnerVerdeC">#99DD90</color>
+    <color name="WagnerVerdeT">#3399DD90</color>
+    <color name="WagnerVerdeTrans">#cc99DD90</color>
+    <color name="WagnerOscuro">#163A4A</color>
+    <color name="WagnerClaro">#55D9EFFD</color>
+    <color name="WagnerOscuroTra">#aa163A4A</color>
+
 </resources>

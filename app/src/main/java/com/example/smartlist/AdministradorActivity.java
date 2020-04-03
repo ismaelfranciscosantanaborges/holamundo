@@ -80,7 +80,7 @@ public class AdministradorActivity extends AppCompatActivity implements IEvaluab
                 if(nombre.length() >= 0){
 
                     for(Producto p : listaItem){
-                        String nombreP = p.getNombre().toLowerCase();
+                        String nombreP = p.getMarca().toLowerCase();
                         if(nombreP.contains(nombre.toLowerCase())){
                             listaBusqueda.add(p);
                         }
@@ -279,7 +279,7 @@ public class AdministradorActivity extends AppCompatActivity implements IEvaluab
                         Producto p = snapshot.getValue(Producto.class);
 
                         listaItem.add(p);
-                        nombreDeProductos.add(p.getNombre());
+                        nombreDeProductos.add(p.getMarca());
                         adaptador = new AdapterAdmin(context, listaItem);
                         listViewAdmin.setAdapter(adaptador);
                     }

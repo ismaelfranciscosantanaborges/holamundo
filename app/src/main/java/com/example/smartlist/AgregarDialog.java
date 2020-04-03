@@ -75,8 +75,7 @@ public class AgregarDialog extends AppCompatDialogFragment {
 
         final View view = inflater.inflate(R.layout.layout_agregar, null);
 
-        builder.setView(view)
-                .setTitle("Agregar Producto");
+        builder.setView(view);
 
         tvIdP = view.findViewById(R.id.tvIdP);
         etNombreP = view.findViewById(R.id.etAgregarNombreP);

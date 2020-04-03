@@ -4,6 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
+    android:background="@drawable/forma_dialog"
     >
 
     <ImageView
@@ -28,6 +29,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="NOMBRE DEL PRODUCTO"
+        android:textColor="@color/WagnerOscuro"
         android:textStyle="bold"
         android:textSize="12sp"
         android:textAlignment="center"
@@ -37,6 +39,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="NOMBRE DEL PRODUCTO"
+        android:textColor="@color/WagnerOscuro"
         android:textSize="14sp"
         android:textAlignment="center"
         />
@@ -44,6 +47,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="PRECIO DEL PRODUCTO"
+        android:textColor="@color/WagnerOscuro"
         android:textStyle="bold"
         android:textSize="12sp"
         android:textAlignment="center"
@@ -53,6 +57,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="200"
+        android:textColor="@color/WagnerOscuro"
         android:textSize="14sp"
         android:textAlignment="center"
         />
@@ -60,6 +65,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="CANTIDAD DECEADA"
+        android:textColor="@color/WagnerOscuro"
         android:textStyle="bold"
         android:textSize="12sp"
         android:textAlignment="center"
@@ -79,6 +85,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="TOTAL DE PRODUCTO"
+        android:textColor="@color/WagnerOscuro"
         android:textStyle="bold"
         android:textSize="12sp"
         android:textAlignment="center"
@@ -87,8 +94,8 @@
         android:id="@+id/tvTotalPC"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textColor="@color/Red"
         android:text="3"
-
         android:textSize="16sp"
         android:textAlignment="center"
         />
@@ -96,13 +103,21 @@
     <Button
         android:id="@+id/btnAgregarPC"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:text="Agregar a la compra"
+        android:background="@drawable/degradado_verde"
+        android:layout_marginBottom="10dp"
+        android:layout_marginHorizontal="10dp"
+        android:textColor="@color/White"
         />
     <Button
         android:id="@+id/btnCancelarPC"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:text="Cancelar PRODUCTO"
+        android:layout_marginHorizontal="10dp"
+        android:textColor="@color/White"
+        android:background="@drawable/linea_oscura"
+        android:layout_marginBottom="13dp"
         />
 </LinearLayout>

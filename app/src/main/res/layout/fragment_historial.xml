@@ -1,14 +1,161 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".HistorialFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="ffffffffff" />
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/larriba"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/imgPerfil"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/mifoto" />
+
+            <TextView
+                android:id="@+id/misTitulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ismaelfrancisco2000@gmail.com"
+                android:textColor="@color/WagnerOscuro"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/miNombre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ismael F. Santana Borges"
+                android:textColor="#000"
+                android:textSize="25dp"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:drawableEnd="@drawable/arrow"
+                android:text="Salir"
+                android:paddingHorizontal="10dp"
+                android:background="@drawable/degradado_verde"
+                android:textColor="@color/White"
+                />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/larriba"
+            app:layout_constraintBottom_toTopOf="@+id/labajo"
+            app:layout_constraintEnd_toEndOf="parent"
+            >
+        <LinearLayout
+            android:id="@+id/lcenter"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:gravity="center">
+
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginHorizontal="70dp"
+                    android:background="@color/WagnerVerde"
+                    tools:layout_editor_absoluteX="70dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Quienes somos?"
+                    android:textColor="@color/WagnerOscuro"
+                    android:textSize="18sp"
+                    android:textAlignment="center"
+                    android:layout_marginBottom="10dp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="SmartList es una app desarrollada para agilizar las compra de una forma muy notoria.
+Este proyecto surge por la gran cantidad de tiempo que se puede llegar a perder en una simple caja, cuando un grupo de futuros profesionales se dedicados a solucionar este gran problema. \n
+Esto se puede para por un echo insignificante, pero uno de los momentos más delicados a la hora de hacer la compra es el paso por caja. Para el comprador es fastidioso porque tiene que pagar, pero para el comercio es igualmente problemático porque tiene que ingeniárselas para evitar que, en caso de que haya mucha gente en la cola de caja, el cliente se desespere y se le escape. \n
+"
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+                    android:layout_marginHorizontal="10dp"
+                    />
+
+
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginHorizontal="70dp"
+                android:background="@color/WagnerVerde"
+                tools:layout_editor_absoluteX="70dp" />
+
+        </LinearLayout>
+    </ScrollView>
+        <LinearLayout
+            android:id="@+id/labajo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Valóranos!"
+                android:textColor="@color/WagnerOscuro"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="41dp"
+                android:layout_marginVertical="3dp"
+                android:backgroundTint="@color/WagnerVerde"
+                android:progressBackgroundTint="@color/WagnerVerde"
+
+                android:numStars="5" />
+
+            <TextView
+                android:id="@+id/calificacion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sin Calificar"
+                android:textColor="@color/WagnerOscuro"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
 
 </FrameLayout>

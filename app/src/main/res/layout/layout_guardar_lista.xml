@@ -3,13 +3,19 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:orientation="vertical"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/forma_dialog"
+    >
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Ingrese un nombre para la lista"
         android:textAlignment="center"
+        android:textColor="@color/WagnerOscuro"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_marginVertical="5dp"
         />
 
     <EditText
@@ -17,20 +23,29 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:maxLength="18"
+        android:layout_marginHorizontal="10dp"
         />
 
     <Button
         android:id="@+id/btnGuardarG"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:text="Guardar"
+        android:textColor="@color/White"
+        android:background="@drawable/degradado_verde"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="10dp"
         />
 
     <Button
         android:id="@+id/btnCancelarG"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
+        android:textColor="@color/White"
         android:text="Cancelar"
+        android:background="@drawable/linea_oscura"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginBottom="13dp"
         />
 
 

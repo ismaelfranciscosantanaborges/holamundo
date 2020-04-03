@@ -11,7 +11,19 @@
         app:layout_constraintTop_toTopOf="parent"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        />
+        android:background="@color/WagnerVerde"
+        android:gravity="center
+"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SmartList"
+            android:textSize="30dp"
+            android:textColor="@color/WagnerOscuro"
+            android:textStyle="bold"
+            />
+    </com.google.android.material.appbar.AppBarLayout>
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tabLayout"
@@ -19,6 +31,8 @@
         android:layout_height="wrap_content"
         app:tabPaddingTop="15dp"
         app:tabPaddingBottom="8dp"
+        app:tabSelectedTextColor="@color/WagnerOscuro"
+        app:tabIndicatorColor="@color/WagnerVerde"
         android:background="@color/Transparente"
         app:layout_constraintTop_toBottomOf="@+id/appbar"
         app:tabMode="fixed"
